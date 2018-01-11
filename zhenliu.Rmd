@@ -1,0 +1,31 @@
+---
+title: "Zhen Assignment1"
+author: "ZhenLiu"
+date: "2018/1/11"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Introduction about Myself
+
+I am Zhen Liu. I came from China. I came to Canada in 2015 This is my first time using R markdown. 
+
+## My Favourite Equation
+Population mean = $\mu$ = $\frac{\sum_{i=1}^{N}X_i}{N}$, where N is the pupulation size.
+
+## Discussion for Dataset
+My favoriate city is my hometown Changsha. I did not stay in Changsha last year so I am super curious about the temprature change of my hometown last year.
+```{r}
+MyDataset = data.frame(Month = c(1:12), Temprature =c(-1,5,10,14,25,30,35,36,30,28,12,2))
+head(MyDataset,5)  #first five rows of my dataset
+```
+
+
+## Scatter plot of MyDataset
+
+```{r plot, echo=FALSE}
+plot(MyDataset$Month,MyDataset$Temprature, main = 'Monthly Average Temprature of Changsha in 2017', xlab = 'Month',ylab = 'Tempature(C)')
+```
