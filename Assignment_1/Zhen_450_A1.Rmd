@@ -22,11 +22,9 @@ My favoriate city is my hometown, Changsha. I did not stay in Changsha last year
 MyDataset = data.frame(Month = c(1:12), Temperature =c(-1,5,10,14,25,30,35,36,30,28,12,2))
 head(MyDataset,5)  #first five rows of my dataset
 ```
-
-
 ## Scatter plot of MyDataset
 The following is the scatter plot of my dataset.
 
-```{r plot, echo=FALSE}
-plot(MyDataset$Month,MyDataset$Temprature, main = 'Monthly Average Temperature of Changsha in 2017', xlab = 'Month',ylab = 'Temperature(C)')
+```{r plot,echo=FALSE}
+plot(MyDataset$Month,MyDataset$Temperature, main = 'Monthly Average Temperature of Changsha in 2017', xlab = 'Month',ylab = 'Temperature(C)')
 ```
